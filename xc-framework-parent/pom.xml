@@ -124,23 +124,23 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
-            <!--<dependency>
+            <dependency>
                 <groupId>net.oschina.zcx7878</groupId>
                 <artifactId>fastdfs-client-java</artifactId>
                 <version>${fastdfs-client-java.version}</version>
-            </dependency>-->
+            </dependency>
 
-            <!--<dependency>
+            <dependency>
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>elasticsearch-rest-high-level-client</artifactId>
                 <version>${elasticsearch.version}</version>
-            </dependency>-->
+            </dependency>
             <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
-            <!--<dependency>
+            <dependency>
                 <groupId>org.elasticsearch</groupId>
                 <artifactId>elasticsearch</artifactId>
                 <version>${elasticsearch.version}</version>
-            </dependency>-->
+            </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
@@ -152,14 +152,14 @@
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
-           <!-- &lt;!&ndash; 资源文件拷贝插件 &ndash;&gt;
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>-->
+            <!-- &lt;!&ndash; 资源文件拷贝插件 &ndash;&gt;
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-resources-plugin</artifactId>
+                 <configuration>
+                     <encoding>UTF-8</encoding>
+                 </configuration>
+             </plugin>-->
             <!-- java编译插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
