@@ -19,30 +19,6 @@ public class PageService {
     @Autowired
     CmsPageRepository cmsPageRepository;
 
-    //页面列表分页查询
-    /*public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest) {
-       if (queryPageRequest==null){
-           queryPageRequest = new QueryPageRequest();
-       }
-       if (page<=0){
-           page=1;
-       }
-       page=page-1;//为了适应mongodb的接口将页码减1
-        if (size<=0){
-            size=20;
-        }
-        // 分页对象
-        Pageable pageable = PageRequest.of(page,size);
-        // 分页查询
-        Page<CmsPage> all = cmsPageRepository.findAll(pageable);
-        QueryResult<CmsPage> queryResult = new QueryResult<CmsPage>();
-        queryResult.setList(all.getContent());
-        queryResult.setTotal(all.getTotalElements());
-        QueryResponseResult queryResponseResult = new QueryResponseResult(CommonCode.SUCCESS,queryResult);
-        return queryResponseResult;
-    }*/
-
-
     /**
      * 页面查询方法
      * @param page 页码，从1开始记数
