@@ -2,6 +2,7 @@ package com.xuecheng.manage_cms.service;
 
 import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
+import com.xuecheng.framework.domain.cms.response.CmsPageResult;
 import com.xuecheng.framework.model.response.CommonCode;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.QueryResult;
@@ -73,5 +74,20 @@ public class PageService {
         queryResult.setTotal(all.getTotalElements());//数据总记录数
         QueryResponseResult queryResponseResult = new QueryResponseResult(CommonCode.SUCCESS,queryResult);
         return queryResponseResult;
+    }
+
+    //新增页面
+    public CmsPageResult addCms(CmsPage cmsPage){
+        // 校验页面是否存在，根据页面名称、站点Id、页面webpath的唯一性
+         // 根据页面名称、站点Id、页面webpath查询cmspage，如果查询到，说明页面已经存在.如果查询不到，在继续添加
+        CmsPage cmspageCheck = cmsPageRepository.findByPageNameAndSiteIdAndPageWebPath(cmsPage.getPageName(), cmsPage.getSiteId(), cmsPage.getPageWebPath());
+        if (cmspageCheck == null){
+            // 调用dao新增页面
+            cmsPage.setPageId(null);
+            CmsPage save = cmsPageRepository.save(cmsPage);
+            return new CmsPageResult(CommonCode.SUCCESS,save);
+        }
+        // 添加失败
+        return new CmsPageResult(CommonCode.FAIL,null);
     }
 }
