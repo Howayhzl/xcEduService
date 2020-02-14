@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 
 @Service
 public class PageService {
@@ -90,4 +92,42 @@ public class PageService {
         // 添加失败
         return new CmsPageResult(CommonCode.FAIL,null);
     }
+
+    //根据id查询页面
+    public CmsPage findById(String id){
+        Optional<CmsPage> optional = cmsPageRepository.findById(id);
+        if (optional.isPresent()){
+            return optional.get();
+        }
+        return null;
+    }
+
+
+    //更新页面信息
+    public CmsPageResult update(String id,CmsPage cmsPage){
+       CmsPage one = findById(id);
+       if (one!=null){
+           //更新模板id
+           one.setTemplateId(cmsPage.getTemplateId());
+           //更新所属站点
+           one.setSiteId(cmsPage.getSiteId());
+           //更新页面别名
+           one.setPageAliase(cmsPage.getPageAliase());
+           //更新页面名称
+           one.setPageName(cmsPage.getPageName());
+           //更新访问路径
+           one.setPageWebPath(cmsPage.getPageWebPath());
+           //更新物理路径
+           one.setPagePhysicalPath(cmsPage.getPagePhysicalPath());
+           //执行更新
+           CmsPage save = cmsPageRepository.save(one);
+           if (save!=null){
+               //更新成功
+               return new CmsPageResult(CommonCode.SUCCESS,save);
+           }
+       }
+        //返回失败
+        return new CmsPageResult(CommonCode.FAIL,null);
+    }
+
 }

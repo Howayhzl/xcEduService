@@ -23,4 +23,10 @@ public interface CmsPageControllerApi {
 
     @ApiOperation("添加页面")
     public CmsPageResult addCms(CmsPage cmsPage);
+
+    @ApiOperation("通过ID查询页面")
+    public CmsPage findById(String id);
+
+    @ApiOperation("修改页面")
+    public CmsPageResult updateCmsPage(String id,CmsPage cmsPage);
 }
