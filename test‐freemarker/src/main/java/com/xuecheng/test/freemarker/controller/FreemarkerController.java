@@ -54,6 +54,8 @@ public class FreemarkerController {
         map.put("stuMap",stuMap);
         //返回模板文件名称
 
+        map.put("point", 102920122);
+
         return "test1";
     }
 }

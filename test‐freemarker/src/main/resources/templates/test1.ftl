@@ -43,5 +43,7 @@ Hello ${name}!
     姓名:${stuMap[k].name}<br/>
     年龄:${stuMap[k].age}<br/>
 </#list>
+<br/>
+${point?c}
 </body>
 </html>
