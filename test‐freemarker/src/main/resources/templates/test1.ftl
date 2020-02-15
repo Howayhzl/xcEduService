@@ -28,10 +28,12 @@ Hello ${name}!
 <br/>
 使用map指令遍历数据模型中的stuMap(map数据),第一种方法:在中括号中填写map的key,第二种方法:在中括号中填写map后面直接加点key
 <br/>
-姓名:${stuMap['stu1'].name}<br/>
-年龄:${stuMap['stu2'].age}<br/>
-姓名:${stuMap.stu1.name}<br/>
-年龄:${stuMap.stu1.age}<br/>
+<#if stus??>
+姓名:${(stuMap['stu1'].name)!''}<br/>
+年龄:${(stuMap['stu2'].age)!''}<br/>
+姓名:${(stuMap.stu1.name)!''}<br/>
+年龄:${(stuMap.stu1.age)!''}<br/>
+</#if>
 遍历map中的key
 <br/>
 <#list stuMap?keys as k>
