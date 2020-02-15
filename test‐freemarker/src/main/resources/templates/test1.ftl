@@ -13,6 +13,7 @@ Hello ${name}!
         <td>年龄</td>
         <td>钱包</td>
     </tr>
+    <#if stus??>
     <#list stus as stu>
         <tr>
             <td>${stu_index+1}</td>   
@@ -21,6 +22,7 @@ Hello ${name}!
             <td <#if stu.money gt 300>style="background: red" </#if>>${stu.money}</td>
         </tr>
     </#list>
+    </#if>
     <br>
 </table>
 <br/>

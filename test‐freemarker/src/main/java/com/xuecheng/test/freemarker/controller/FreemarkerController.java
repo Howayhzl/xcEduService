@@ -41,7 +41,7 @@ public class FreemarkerController {
         stus.add(stu2);
 
         //向数据模型放数据
-        map.put("stus",stus);
+        //map.put("stus",stus);
 
         //准备map数据
         HashMap<String,Student>  stuMap  = new HashMap<>();
