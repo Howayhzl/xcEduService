@@ -18,7 +18,7 @@ Hello ${name}!
             <td>${stu_index+1}</td>   
             <td <#if stu.name=='小明'>style="background: red" </#if>> ${stu.name}</td>
             <td>${stu.age}</td>
-            <td>${stu.money}</td>
+            <td <#if stu.money gt 300>style="background: red" </#if>>${stu.money}</td>
         </tr>
     </#list>
     <br>
