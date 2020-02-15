@@ -45,5 +45,9 @@ Hello ${name}!
 </#list>
 <br/>
 ${point?c}
+<br/>
+<#assign text="{'bank':'工商银行','account':'10101920201920212'}" />
+<#assign data=text?eval />
+开户行：${data.bank}  账号：${data.account}
 </body>
 </html>
