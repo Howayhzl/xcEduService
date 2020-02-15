@@ -15,8 +15,8 @@ Hello ${name}!
     </tr>
     <#list stus as stu>
         <tr>
-            <td>${stu_index+1}</td>    
-            <td>${stu.name}</td>
+            <td>${stu_index+1}</td>   
+            <td <#if stu.name=='小明'>style="background: red" </#if>> ${stu.name}</td>
             <td>${stu.age}</td>
             <td>${stu.money}</td>
         </tr>
