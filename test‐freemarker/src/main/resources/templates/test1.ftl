@@ -24,6 +24,8 @@ Hello ${name}!
             <td>${stu.birthday?string("YYYY年MM月dd日")}</td>
         </tr>
     </#list>
+    <br/>
+    学生的个数: ${stus?size}
     </#if>
 </table>
 <br/>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="982b6987-f909-44ec-923a-6d3d342e9b7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/controller/FreemarkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/controller/FreemarkerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test‐freemarker/src/main/resources/templates/test1.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/test‐freemarker/src/main/resources/templates/test1.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/xc-framework-parent/target/" />
@@ -37,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/controller/FreemarkerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            <state relative-caret-position="218">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +49,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/model/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/resources/templates/test1.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state relative-caret-position="104">
+              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#3;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -111,8 +122,8 @@
         <option value="$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/model/Student.java" />
         <option value="$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/model/controller/FreemarkerController.java" />
         <option value="$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/FreemarkerTestApplication.java" />
-        <option value="$PROJECT_DIR$/test‐freemarker/src/main/resources/templates/test1.ftl" />
         <option value="$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/controller/FreemarkerController.java" />
+        <option value="$PROJECT_DIR$/test‐freemarker/src/main/resources/templates/test1.ftl" />
       </list>
     </option>
   </component>
@@ -135,8 +146,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-183" />
-    <option name="y" value="67" />
+    <option name="x" value="-87" />
+    <option name="y" value="12" />
     <option name="width" value="1940" />
     <option name="height" value="1103" />
   </component>
@@ -375,7 +386,7 @@
       <workItem from="1581600053730" duration="1566000" />
       <workItem from="1581601886036" duration="553000" />
       <workItem from="1581686084387" duration="4753000" />
-      <workItem from="1581732194095" duration="12610000" />
+      <workItem from="1581732194095" duration="13281000" />
     </task>
     <task id="LOCAL-00001" summary=" 页面查询服务接口定义以及注释不能导入的包">
       <created>1580914833607</created>
@@ -517,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581750538636</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="缺失变量默认值使用 “!” 进行空值处理">
+      <created>1581750787804</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1581750787804</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -553,7 +571,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55084000" />
+    <option name="totallyTimeSpent" value="55755000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -678,7 +696,8 @@
     <MESSAGE value="if 判断指令简单实用" />
     <MESSAGE value="条件为真则输出if中间的内容，否&#10;则跳过内容不再输出" />
     <MESSAGE value="判断某变量是否存在使用 “??”进行控制处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="判断某变量是否存在使用 “??”进行控制处理" />
+    <MESSAGE value="缺失变量默认值使用 “!” 进行空值处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="缺失变量默认值使用 “!” 进行空值处理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1056,16 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test‐freemarker/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1073,23 +1082,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/resources/templates/test1.ftl">
+    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/controller/FreemarkerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state relative-caret-position="218">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
-            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/controller/FreemarkerController.java">
+    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/java/com/xuecheng/test/freemarker/model/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/resources/templates/test1.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
