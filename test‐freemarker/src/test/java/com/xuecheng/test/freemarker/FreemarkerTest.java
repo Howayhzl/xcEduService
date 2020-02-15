@@ -52,6 +52,41 @@ public class FreemarkerTest {
         fileOutputStream.close();
     }
 
+    //使用模板字符串静态化
+    @Test
+    public void testGenerateHtmlByString() throws IOException, TemplateException {
+        //创建配置类
+        Configuration configuration=new Configuration(Configuration.getVersion());
+        //定义模板
+        //获取模板内容(字符串)
+        //这里测试时使用简单的字符串作为模板
+        String  templateString=""  +
+                "<html>\n"  +
+                "        <head></head>\n"  +
+                "        <body>\n"  +
+                "        名称：${name}\n"  +
+                "        </body>\n"  +
+                "</html>";
+        //使用一个模板加载器变为模板
+        StringTemplateLoader stringTemplateLoader = new StringTemplateLoader();
+        stringTemplateLoader.putTemplate("template",templateString);
+        //在配置中设置模板加载器
+        configuration.setTemplateLoader(stringTemplateLoader);
+        //获取模板
+        Template template = configuration.getTemplate("template", "utf-8");
+        //定义数据模型
+        Map<String,Object> map = new HashMap<>();
+        map.put("name","黑马程序员");
+        //静态化
+        String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, map);
+        System.out.println(content);
+        InputStream inputStream = IOUtils.toInputStream(content);
+        //输出文件
+        FileOutputStream fileOutputStream = new FileOutputStream(new File("d:/test2.html"));
+        IOUtils.copy(inputStream,fileOutputStream);
+        inputStream.close();
+        fileOutputStream.close();
+    }
 
 
     //数据模型
