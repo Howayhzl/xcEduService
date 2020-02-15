@@ -14,10 +14,12 @@ Hello ${name}!
         <td>钱包</td>
     </tr>
     <#list stus as stu>
-        <td>${stu_index+1}</td>    
-        <td>${stu.name}</td>
-        <td>${stu.age}</td>
-        <td>${stu.money}</td>
+        <tr>
+            <td>${stu_index+1}</td>    
+            <td>${stu.name}</td>
+            <td>${stu.age}</td>
+            <td>${stu.money}</td>
+        </tr>
     </#list>
     <br>
 </table>
