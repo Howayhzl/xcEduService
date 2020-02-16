@@ -17,8 +17,6 @@ public class FreemarkerController {
 
     }
 
-
-
     @RequestMapping("/test1")
     public String freemarker(Map<String,Object> map){
         //向数据模型放数据
