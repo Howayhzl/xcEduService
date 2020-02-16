@@ -10,6 +10,15 @@ import java.util.*;
 @RequestMapping("/freemarker")
 public class FreemarkerController {
 
+
+    @RequestMapping("/banner")
+    public String index_banner(){
+        return "index_banner";
+
+    }
+
+
+
     @RequestMapping("/test1")
     public String freemarker(Map<String,Object> map){
         //向数据模型放数据
