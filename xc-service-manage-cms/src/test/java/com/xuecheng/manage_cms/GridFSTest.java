@@ -66,4 +66,11 @@ public class GridFSTest {
         System.out.println(content);
     }
 
+    //删除文件
+    @Test
+    public void testFileDelete(){
+        String fileId="5e48ecf8f4b78d08442cf57a";
+        gridFsTemplate.delete(Query.query(Criteria.where("_id").is(fileId)));
+    }
+
 }
