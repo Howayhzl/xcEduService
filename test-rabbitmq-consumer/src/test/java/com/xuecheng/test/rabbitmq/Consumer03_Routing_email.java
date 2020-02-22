@@ -5,12 +5,12 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-public class Consumer02_subscribe_email {
+public class Consumer03_Routing_email {
 
     //队列名称
     private static final String QUEUE_INFORM_EMAIL = "queue_inform_email";
-    private static final String EXCHANGE_FANOUT_INFORM="exchange_fanout_inform";
-
+    private static final String EXCHANGE_ROUTING_INFORM="exchange_routing_inform";
+    private static final String ROUTINGKEY_EMAIL="inform_email";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         //通过连接工厂创建新的连接和mq建立连接
@@ -47,7 +47,7 @@ public class Consumer02_subscribe_email {
          * topic：对应的Topics工作模式
          * headers： 对应的headers工作模式
          */
-        channel.exchangeDeclare(EXCHANGE_FANOUT_INFORM, BuiltinExchangeType.FANOUT);
+        channel.exchangeDeclare(EXCHANGE_ROUTING_INFORM, BuiltinExchangeType.DIRECT);
         //进行交换机和队列绑定
         //参数：String queue, String exchange, String routingKey
         /**
@@ -56,7 +56,7 @@ public class Consumer02_subscribe_email {
          * 2、exchange 交换机名称
          * 3、routingKey 路由key，作用是交换机根据路由key的值将消息转发到指定的队列中，在发布订阅模式中调协为空字符串
          */
-        channel.queueBind(QUEUE_INFORM_EMAIL, EXCHANGE_FANOUT_INFORM, "");
+        channel.queueBind(QUEUE_INFORM_EMAIL, EXCHANGE_ROUTING_INFORM,ROUTINGKEY_EMAIL);
 
         //实现消费方法
         DefaultConsumer defaultConsumer = new DefaultConsumer(channel){

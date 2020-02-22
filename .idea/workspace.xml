@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="982b6987-f909-44ec-923a-6d3d342e9b7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_sms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer03_Routing_email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer03_Routing_sms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer03_Routing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer02_publish.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer02_publish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_email.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_sms.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_sms.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/xc-framework-parent/target/" />
     <ignored path="$PROJECT_DIR$/xc-framework-common/target/" />
@@ -41,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer02_publish.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="163">
+              <caret line="61" column="20" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_email.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+            <state relative-caret-position="1581">
+              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_sms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="1530">
+              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -97,10 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xc-framework-model/pom.xml" />
-        <option value="$PROJECT_DIR$/xc-framework-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/xc-framework-utils/pom.xml" />
-        <option value="$PROJECT_DIR$/xc-service-manage-cms/pom.xml" />
         <option value="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/config/controller/A.java" />
         <option value="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/config/A.java" />
         <option value="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/config/ManageCmsApplication.java" />
@@ -144,10 +142,14 @@
         <option value="$PROJECT_DIR$/test-rabbitmq-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer01.java" />
         <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer01.java" />
-        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_email.java" />
         <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_ems.java" />
-        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_sms.java" />
         <option value="$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer02_publish.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_Routing_email.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer02_Routing.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer03_Routing_email.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer03_Routing_sms.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_email.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_sms.java" />
       </list>
     </option>
   </component>
@@ -170,10 +172,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="282" />
-    <option name="y" value="-15" />
+    <option name="x" value="-163" />
+    <option name="y" value="351" />
     <option name="width" value="1943" />
-    <option name="height" value="1048" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -200,6 +201,13 @@
               <item name="xcEduService" type="462c0819:PsiDirectoryNode" />
               <item name="test-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xcEduService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xcEduService" type="462c0819:PsiDirectoryNode" />
+              <item name="test-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xcEduService" type="b2602c69:ProjectViewProjectNode" />
@@ -228,6 +236,12 @@
             <path>
               <item name="xcEduService" type="b2602c69:ProjectViewProjectNode" />
               <item name="xcEduService" type="462c0819:PsiDirectoryNode" />
+              <item name="test-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xcEduService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xcEduService" type="462c0819:PsiDirectoryNode" />
               <item name="test-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,6 +249,13 @@
               <item name="xcEduService" type="462c0819:PsiDirectoryNode" />
               <item name="test-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xcEduService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xcEduService" type="462c0819:PsiDirectoryNode" />
+              <item name="test-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xcEduService" type="b2602c69:ProjectViewProjectNode" />
@@ -264,6 +285,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,12 +309,11 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\main\resources\templates" />
-      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\XCZXProjects\xcEduService\xc-service-manage-cms\src\test\java\com\xuecheng\manage_cms\dao" />
+      <recent name="G:\XCZXProjects\xcEduService\xc-service-manage-cms\src\test" />
       <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test\java" />
-      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test\resources" />
-      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test\java\resources" />
+      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xuecheng.test.rabbitmq" />
@@ -301,11 +322,12 @@
       <recent name="com.xuecheng.manage_cms.controller" />
       <recent name="com.xuecheng.api.cms" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\XCZXProjects\xcEduService\xc-service-manage-cms\src\test\java\com\xuecheng\manage_cms\dao" />
-      <recent name="G:\XCZXProjects\xcEduService\xc-service-manage-cms\src\test" />
-      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test\java" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\main\resources\templates" />
       <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test" />
+      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test\java" />
+      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test\resources" />
+      <recent name="G:\XCZXProjects\xcEduService\test‐freemarker\src\test\java\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -320,20 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Consumer02_subscribe_email">
-    <configuration name="Consumer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xuecheng.test.rabbitmq.Consumer01" />
-      <module name="test-rabbitmq-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xuecheng.test.rabbitmq.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Producer02_publish">
     <configuration name="Consumer02_subscribe_email" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xuecheng.test.rabbitmq.Consumer02_subscribe_email" />
       <module name="test-rabbitmq-consumer" />
@@ -360,9 +369,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xuecheng.test.rabbitmq.Producer01" />
-      <module name="test-rabbitmq-producer" />
+    <configuration name="Consumer03_Routing_email" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xuecheng.test.rabbitmq.Consumer03_Routing_email" />
+      <module name="test-rabbitmq-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuecheng.test.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer03_Routing_sms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xuecheng.test.rabbitmq.Consumer03_Routing_sms" />
+      <module name="test-rabbitmq-consumer" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.xuecheng.test.rabbitmq.*" />
@@ -395,11 +417,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Consumer02_subscribe_email" />
-        <item itemvalue="Application.Consumer02_subscribe_sms" />
         <item itemvalue="Application.Producer02_publish" />
-        <item itemvalue="Application.Consumer01" />
-        <item itemvalue="Application.Producer01" />
+        <item itemvalue="Application.Consumer02_subscribe_sms" />
+        <item itemvalue="Application.Consumer02_subscribe_email" />
+        <item itemvalue="Application.Consumer03_Routing_email" />
+        <item itemvalue="Application.Consumer03_Routing_sms" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +449,8 @@
       <workItem from="1581823009836" duration="4100000" />
       <workItem from="1581832945251" duration="21689000" />
       <workItem from="1581923696908" duration="6799000" />
-      <workItem from="1581996954966" duration="4802000" />
+      <workItem from="1581996954966" duration="6530000" />
+      <workItem from="1582199381963" duration="2717000" />
     </task>
     <task id="LOCAL-00001" summary=" 页面查询服务接口定义以及注释不能导入的包">
       <created>1580914833607</created>
@@ -723,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581998944394</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Publish/subscribe消费者完成">
+      <created>1582100773834</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1582100773834</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -759,7 +789,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102445000" />
+    <option name="totallyTimeSpent" value="106890000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -774,8 +804,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86654806" visible="true" weight="0.17962466" />
-      <window_info id="Structure" order="1" sideWeight="0.13345195" side_tool="true" visible="true" weight="0.17962466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.863388" visible="true" weight="0.18364611" />
+      <window_info id="Structure" order="1" sideWeight="0.13661203" side_tool="true" visible="true" weight="0.18364611" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -784,21 +814,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.7124665" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8786863" visible="true" weight="0.203966" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8780161" weight="0.22237961" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.91018766" weight="0.5184136" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.883378" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49731904" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.121313676" side_tool="true" visible="true" weight="0.203966" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.121983916" side_tool="true" visible="true" weight="0.22237961" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.905496" weight="0.36685553" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.91152817" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.90147454" weight="0.4674221" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.5017794" side_tool="true" visible="true" weight="0.09115282" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.14477211" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -810,6 +839,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.1461126" />
       <window_info anchor="right" id="Maven" order="10" sideWeight="0.49822065" visible="true" weight="0.09115282" />
+      <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5017794" side_tool="true" visible="true" weight="0.09115282" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -866,7 +896,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="if 判断指令简单实用" />
     <MESSAGE value="条件为真则输出if中间的内容，否&#10;则跳过内容不再输出" />
     <MESSAGE value="判断某变量是否存在使用 “??”进行控制处理" />
     <MESSAGE value="缺失变量默认值使用 “!” 进行空值处理" />
@@ -891,7 +920,8 @@
     <MESSAGE value="RabbitMQ入门程序生产者编写完成，测试OK" />
     <MESSAGE value="RabbitMQ入门程序消费者编写完成，测试OK" />
     <MESSAGE value="Publish/subscribe工作模式生产者完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="Publish/subscribe工作模式生产者完成" />
+    <MESSAGE value="Publish/subscribe消费者完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="Publish/subscribe消费者完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -963,22 +993,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/test/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/test‐freemarker/src/test/java/resources/templates/test1.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test‐freemarker/target/test-classes/templates/test1.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1337,20 +1351,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer02_publish.java">
+    <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/test-rabbitmq-consumer.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer03_Routing_sms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-969">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer03_Routing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="95" column="68" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer03_Routing_email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_email.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        <state relative-caret-position="1581">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1359,8 +1387,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/test/java/com/xuecheng/test/rabbitmq/Consumer02_subscribe_sms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="1530">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-rabbitmq-producer/src/test/java/com/xuecheng/test/rabbitmq/Producer02_publish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="61" column="20" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
