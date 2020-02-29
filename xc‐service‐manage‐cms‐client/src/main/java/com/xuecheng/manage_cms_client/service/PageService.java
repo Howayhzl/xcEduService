@@ -38,44 +38,24 @@ public class PageService {
     @Autowired
     GridFsTemplate gridFsTemplate;
 
-    private static final Logger logger = LoggerFactory.getLogger(PageService.class);
-    @Autowired
-    CmsPageRepository cmsPageRepository;
-
-    @Autowired
-    CmsSiteRepository cmsSiteRepository;
-
-    @Autowired
-    GridFsTemplate gridFsTemplate;
-
-    @Autowired
-   GridFSBucket gridFSBucket;
-
-    @Autowired
-    RestTemplate restTemplate;
-
     //将页面html保存到页面物理路径
     public void savePageToServerPath(String pageId){
-        //根据pageId获取CmsPage
-        CmsPage cmsPage = this.findCmsPageByPageId(pageId);
-        //获取html的fileId，从CmsPage中获取
+        //获取cmsPage信息
+        CmsPage cmsPage = findCmsPageById(pageId);
+        //获取html文件Id,从CmsPage中获取htmlFileId内容
         String htmlFileId = cmsPage.getHtmlFileId();
-        //从gridFS中查询html,根据htmlFileId从GridDF中查询文件内容
-        InputStream inputStream = this.getFileById(htmlFileId);
+        //从gridFS查询html文件
+        InputStream inputStream = getFileById(htmlFileId);
         if (inputStream==null){
-            logger.error("getFileById InputStream is null,htmlFileId:{}",htmlFileId);
+            LOGGER.error("getFileById inputStream is null,htmlFileId:{}",htmlFileId);
             return;
         }
-        //将页面html保存到页面物理路径
-
-        // 获取站点信息
-        CmsSite cmsSite = this.findCmsSiteByPageId(cmsPage.getSiteId());
-        //获取站点物理路径
+        //得到站点的物理路径
+        CmsSite cmsSite = findCmsSiteById(cmsPage.getSiteId());
         String sitePhysicalPath = cmsSite.getSitePhysicalPath();
-        //获取页面的物理路径
-        String pagePath = sitePhysicalPath + cmsPage.getPagePhysicalPath() + cmsPage.getPageName();
-
-        //将html文件保存到服务器的物理路径上
+        //得到页面的物理路径
+        String pagePath = sitePhysicalPath+cmsPage.getPagePhysicalPath()+cmsPage.getPageName();
+        //将html文件保存到服务器物理路径上
         FileOutputStream fileOutputStream = null;
         try {
             fileOutputStream = new FileOutputStream(new File(pagePath));
@@ -94,18 +74,6 @@ public class PageService {
                 e.printStackTrace();
             }
         }
-
-
-    }
-
-    //根据pageId获取CmsPage
-    private CmsPage  findCmsPageByPageId(String siteId){
-        Optional<CmsPage> optional = cmsPageRepository.findById(siteId);
-        if (optional.isPresent()){
-            CmsPage cmsPage = optional.get();
-            return cmsPage;
-        }
-        return null;
     }
 
     //获取cmsSite信息
@@ -138,25 +106,8 @@ public class PageService {
     public CmsPage findCmsPageById(String pageId){
         Optional<CmsPage> optional = cmsPageRepository.findById(pageId);
         if (optional.isPresent()){
-            CmsSite cmsSite = optional.get();
-            return cmsSite;
-        }
-        return null;
-    }
-
-    //根据htmlFileId从GridDF中查询文件内容
-    private InputStream getFileById(String htmlFileId){
-        //根据htmlFileId获取文件对象
-        GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(htmlFileId)));
-        //打开下载流
-        GridFSDownloadStream gridFSDownloadStream = gridFSBucket.openDownloadStream(gridFSFile.getObjectId());
-        //定义GridFSResource
-        GridFsResource gridFsResource = new GridFsResource(gridFSFile,gridFSDownloadStream);
-        try {
-            InputStream inputStream = gridFsResource.getInputStream();
-            return inputStream;
-        } catch (IOException e) {
-            e.printStackTrace();
+            CmsPage cmsPage = optional.get();
+            return cmsPage;
         }
         return null;
     }
