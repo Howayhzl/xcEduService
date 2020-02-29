@@ -122,6 +122,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.xmlunit:xmlunit-core:2.5.1" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.9.1" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.13.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:2.0.3.RELEASE" level="project" />

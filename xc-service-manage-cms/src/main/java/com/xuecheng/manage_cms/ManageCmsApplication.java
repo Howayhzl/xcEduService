@@ -20,6 +20,7 @@ public class ManageCmsApplication {
         SpringApplication.run(ManageCmsApplication.class,args);
     }
 
+
     @Bean
     public RestTemplate getRestTemplate(){
         return new RestTemplate(new OkHttp3ClientHttpRequestFactory());
