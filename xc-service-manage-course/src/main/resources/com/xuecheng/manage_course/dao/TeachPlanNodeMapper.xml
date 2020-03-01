@@ -30,7 +30,7 @@
             ON b.id = c.parentid
         WHERE a.parentid = '0'
           <if test="_parameter!=null and _parameter!=''">
-              AND a.courseid = '402885816243d2dd016243f24c030002'
+              AND a.courseid = #{courseId}
           </if>
         ORDER BY a.orderby,
           b.orderby,

@@ -1,7 +1,5 @@
 package com.xuecheng.api.course;
 
-import com.xuecheng.framework.domain.cms.CmsPage;
-import com.xuecheng.framework.domain.cms.response.CmsPageResult;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
