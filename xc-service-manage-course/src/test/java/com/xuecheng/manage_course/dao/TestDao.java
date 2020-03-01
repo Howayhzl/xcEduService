@@ -1,5 +1,7 @@
 package com.xuecheng.manage_course.dao;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.xuecheng.framework.domain.course.CourseBase;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
 import org.junit.Test;
@@ -45,5 +47,12 @@ public class TestDao {
     public void testTeachPlanNodeMapper(){
         TeachplanNode teachplanNode = teachPlanNodeMapper.selectList("4028e581617f945f01617f9dabc40000");
         System.out.println(teachplanNode);
+    }
+
+    @Test
+    public void testPagehelper(){
+        PageHelper.startPage(1,10);
+        Page<CourseBase> courseList = courseMapper.findCourseList();
+        System.out.println(courseList);
     }
 }
