@@ -4,6 +4,7 @@ import com.xuecheng.api.cms.CmsPageControllerApi;
 import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
 import com.xuecheng.framework.domain.cms.response.CmsPageResult;
+import com.xuecheng.framework.domain.course.CourseBase;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.ResponseResult;
 import com.xuecheng.manage_cms.service.PageService;
@@ -22,7 +23,7 @@ public class CmsPageController implements CmsPageControllerApi {
 
     @Override
     @GetMapping("/list/{page}/{size}")
-    public QueryResponseResult findList(@PathVariable("page") int page, @PathVariable("size")int size, QueryPageRequest queryPageRequest) {
+    public QueryResponseResult<CourseBase> findList(@PathVariable("page") int page, @PathVariable("size")int size, QueryPageRequest queryPageRequest) {
         return pageService.findList(page,size,queryPageRequest);
     }
 
@@ -52,7 +53,7 @@ public class CmsPageController implements CmsPageControllerApi {
 
     @Override
     @PostMapping("/postPage/{pageId}")
-    public ResponseResult post(String pageId) {
+    public ResponseResult post(@PathVariable("pageId") String pageId) {
         return pageService.post(pageId);
     }
 }

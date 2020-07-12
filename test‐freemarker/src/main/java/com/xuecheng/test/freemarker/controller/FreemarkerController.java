@@ -19,7 +19,7 @@ public class FreemarkerController {
     @RequestMapping("/banner")
     public String index_banner(Map<String,Object> map){
         //使用RestTemplate请求轮播图的数据模型
-        String dataUrl = "http://localhost:31001//cms/config/getModel/5a791725dd573c3574ee333f";
+        String dataUrl = "http://localhost:31001/cms/config/getModel/5a791725dd573c3574ee333f";
         ResponseEntity<Map> entity = restTemplate.getForEntity(dataUrl, Map.class);
         Map body = entity.getBody();
         //设置数据模型

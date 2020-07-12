@@ -2,7 +2,6 @@ package com.xuecheng.manage_cms.service;
 
 import com.alibaba.fastjson.JSON;
 import com.mongodb.client.gridfs.GridFSBucket;
-import com.mongodb.client.gridfs.GridFSBuckets;
 import com.mongodb.client.gridfs.GridFSDownloadStream;
 import com.mongodb.client.gridfs.model.GridFSFile;
 import com.xuecheng.framework.domain.cms.CmsPage;
@@ -10,6 +9,7 @@ import com.xuecheng.framework.domain.cms.CmsTemplate;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
 import com.xuecheng.framework.domain.cms.response.CmsCode;
 import com.xuecheng.framework.domain.cms.response.CmsPageResult;
+import com.xuecheng.framework.domain.course.CourseBase;
 import com.xuecheng.framework.exception.ExceptionCast;
 import com.xuecheng.framework.model.response.CommonCode;
 import com.xuecheng.framework.model.response.QueryResponseResult;
@@ -71,7 +71,7 @@ public class PageService {
      * @param queryPageRequest 查询条件
      * @return
      */
-    public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest) {
+    public QueryResponseResult<CourseBase> findList(int page, int size, QueryPageRequest queryPageRequest) {
 
         if (queryPageRequest == null) {
             queryPageRequest = new QueryPageRequest();
@@ -117,7 +117,7 @@ public class PageService {
         Page<CmsPage> all = cmsPageRepository.findAll(example, pageable);
         queryResult.setList(all.getContent());//数据列表
         queryResult.setTotal(all.getTotalElements());//数据总记录数
-        QueryResponseResult queryResponseResult = new QueryResponseResult(CommonCode.SUCCESS, queryResult);
+        QueryResponseResult<CourseBase> queryResponseResult = new QueryResponseResult<CourseBase>(CommonCode.SUCCESS, queryResult);
         return queryResponseResult;
     }
 
