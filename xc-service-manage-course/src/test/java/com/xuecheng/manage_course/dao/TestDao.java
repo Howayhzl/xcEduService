@@ -54,5 +54,6 @@ public class TestDao {
         PageHelper.startPage(1,10);
         Page<CourseBase> courseList = courseMapper.findCourseList();
         System.out.println(courseList);
+        System.out.println(1);
     }
 }
